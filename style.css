@@ -1,0 +1,215 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Moon", sans-serif;
+  font-weight: bold;
+  background-image: url('https://images.hdqwalls.com/wallpapers/winter-time-minimal-4k-g0.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+nav{
+  height: 80px;
+}
+
+nav ul{
+  justify-content: center;
+  position: relative;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 7px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 1px;
+}
+
+a.active,a:hover{
+  transition: .5s;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  justify-content: center;
+  z-index: 100;
+  border-radius: 0.25rem; /* make the border rounded */
+  background-color: #4a4a4a; /* add a background color */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* add a box shadow */
+  line-height: 0.5; /* adjust line height to make text closer */
+  padding: 0.25rem 0.5rem;
+}
+
+.dropdown-menu li {
+  margin: 0; /* remove default margin */
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  width: 800px; /* Set to your desired width */
+  margin: 0 auto;
+}
+
+.nav li a {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  transition: color 0.1s ease-in-out; /* add a transition for smooth effect */
+}
+
+.nav li a:hover {
+  color: #767676; /* change the color to red on hover */
+}
+
+#scroll-box {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+#scroll-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#scroll-content {
+  width: 2000px; /* Set to the width of your content */
+}
+
+#scroll-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  padding: 10px;
+  color: #fff;
+  border: none; /* Removes the border */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo h1:hover {
+  color: #767676; /* change the color to red on hover */
+}
+
+
+
+.slogan h2 {
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Adjust the height as needed */
+}
+
+.slogan {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* make the buttons appear below the slogan */
+  align-items: center; /* center the buttons horizontally */
+}
+
+.slogan h2 .changingWord {
+  color: #767676;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  font-family: "Moon", sans-serif;
+  background-color: #4a4a4a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#popup-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#popup-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#popup-menu li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+#popup-menu li:hover {
+  background-color: #f1c40f;
+  color: white;
+}
